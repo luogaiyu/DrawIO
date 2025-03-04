@@ -1,9 +1,110 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="第 1 页" id="caMoU586QJdCNTbypbwh">
-    <mxGraphModel>
+    <mxGraphModel dx="2261" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="DojTJRbA1WCytiao5IwM-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-1" target="DojTJRbA1WCytiao5IwM-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-2" value="table" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="210" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-3" target="DojTJRbA1WCytiao5IwM-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="180" as="sourcePoint" />
+            <mxPoint x="630" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-8" value="磁盘" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-12" value="table cache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="340" y="95" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-13" value="block cache" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="200" y="95" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-15" value="MemTable" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="500" y="-70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="559.5" y="-5" as="sourcePoint" />
+            <mxPoint x="559.5" y="35" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-17" value="&lt;section style=&quot;border-radius: 4px; margin: 23px 0px 6px; padding: 4px; position: relative; scroll-margin-bottom: 40px; scroll-margin-top: 40px;&quot; data-section-index=&quot;58&quot; data-markdown-raw=&quot;#### Immutable MemTable&quot; class=&quot;markdown-section&quot; id=&quot;markdown-section--58&quot;&gt;&lt;h4 style=&quot;margin-bottom: 0px; margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Immutable&lt;/span&gt;&lt;/h4&gt;&lt;h4 style=&quot;margin-bottom: 0px; margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;MemTable&lt;/span&gt;&lt;/h4&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 4px; margin: 6px 0px; padding: 4px; position: relative; scroll-margin-bottom: 40px; scroll-margin-top: 40px;&quot; data-section-index=&quot;59&quot; data-markdown-raw=&quot;- 冻结后的只读MemTable，等待写入磁盘&quot; class=&quot;markdown-section&quot; id=&quot;markdown-section--59&quot;&gt;&lt;div style=&quot;color: rgb(214, 214, 221); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, sans-serif; font-size: 13px; text-align: start; background-color: rgb(24, 24, 24); animation: auto ease 0s 1 normal none running none !important;&quot; class=&quot;markdown-section-toolbar&quot;&gt;&lt;div style=&quot;animation: auto ease 0s 1 normal none running none !important; height: 0px; width: 548px;&quot;&gt;&lt;div style=&quot;border-radius: 4px; display: flex; gap: 4px; opacity: 0; position: absolute; right: 8px; top: 0px; transform: translateY(-55%); z-index: 303; animation: auto ease 0s 1 normal none running none !important;&quot; class=&quot;markdown-section-toolbar-internal&quot;&gt;&lt;div style=&quot;align-items: center; border-radius: 3px; color: var(--vscode-foreground); cursor: pointer; display: flex; height: 20px; justify-content: center; opacity: 0.3; position: relative; width: 20px; animation: auto ease 0s 1 normal none running none !important;&quot; class=&quot;markdown-section-toolbar-item dark&quot;&gt;&lt;span style=&quot;display: inline-block; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 14px; line-height: 1; font-family: codicon; text-align: center; text-rendering: auto; -webkit-font-smoothing: antialiased; user-select: none; animation: auto ease 0s 1 normal none running none !important;&quot; class=&quot;codicon codicon-reply&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;align-items: center; border-radius: 3px; color: var(--vscode-foreground); cursor: pointer; display: flex; height: 20px; justify-content: center; opacity: 0.3; position: relative; width: 20px; animation: auto ease 0s 1 normal none running none !important; pointer-events: auto;&quot; class=&quot;markdown-section-toolbar-item markdown-section-toolbar-copy dark&quot;&gt;&lt;span style=&quot;display: inline-block; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 14px; line-height: 1; font-family: codicon; text-align: center; text-rendering: auto; -webkit-font-smoothing: antialiased; user-select: none; animation: auto ease 0s 1 normal none running none !important;&quot; class=&quot;codicon codicon-copy&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="500" y="35" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-19" value="内存" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="35" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-20" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="-80" as="sourcePoint" />
+            <mxPoint x="620" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-22" target="DojTJRbA1WCytiao5IwM-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="-120" />
+              <mxPoint x="550" y="-120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-22" value="USER" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="-260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-23" value="wirte写入请求" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-150" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-13" target="DojTJRbA1WCytiao5IwM-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-17" target="DojTJRbA1WCytiao5IwM-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-15" target="DojTJRbA1WCytiao5IwM-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-12" target="DojTJRbA1WCytiao5IwM-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-45" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="240" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DojTJRbA1WCytiao5IwM-45">
+          <mxGeometry width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-3" value="block" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="DojTJRbA1WCytiao5IwM-45">
+          <mxGeometry x="20" y="10" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="DojTJRbA1WCytiao5IwM-45">
+          <mxGeometry x="20" y="90" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="DojTJRbA1WCytiao5IwM-45">
+          <mxGeometry x="80" y="10" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="DojTJRbA1WCytiao5IwM-45">
+          <mxGeometry x="80" y="90" width="50" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-48" value="Read读取请求" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="414" y="-270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-49" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="DojTJRbA1WCytiao5IwM-17" target="DojTJRbA1WCytiao5IwM-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="190" as="sourcePoint" />
+            <mxPoint x="660" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DojTJRbA1WCytiao5IwM-50" value="随后会被异步写入磁盘" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="514" y="150" width="165" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
